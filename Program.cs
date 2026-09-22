@@ -6,7 +6,7 @@ decimal billAmount = decimal.Parse(Console.ReadLine());
 Console.WriteLine("What is the tip percentage you would like to give?");
 decimal tipPercentage = decimal.Parse(Console.ReadLine());
 
-// Asks the user how many people to split the bill with. The user inputs the amount and it gets converted to a decimal data type so it can be used in calculations.
+// Asks the user how many people to split the bill with. The user inputs the amount and it gets converted to an integer data type so it can be used in calculations.
 Console.WriteLine("What is the number of people to split the bill?");
 int numberOfPeople = int.Parse(Console.ReadLine());
 
@@ -24,10 +24,7 @@ else if (tipPercentage >= 10 && tipPercentage <= 20)
 {
     Console.WriteLine("Thank you for your standard tip!");
 }
-else if (tipPercentage < 10)
-{
-    Console.WriteLine("That is a low tip!");
-}
+else
 
 // Prints the total tip amount, total bill including tip and how much each person pays, all in £ and to 2 decimal places.
 Console.WriteLine($"The total tip amount is: £{tipAmount:F2}");
